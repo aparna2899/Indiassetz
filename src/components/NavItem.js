@@ -1,12 +1,10 @@
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+import classnames from 'classnames';
 
 export default function NavItem(item) {
   return (
     <a href={item.href}>
       <div
-        className={classNames(
+        className={classnames(
           item.current ? 'text-blue' : 'text-gray',
           'group flex items-center px-2 py-2 my-3 text-center text-sm font-normal rounded-md'
         )}>
