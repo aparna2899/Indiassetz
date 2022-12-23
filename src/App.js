@@ -1,11 +1,10 @@
-import Navbar from './components/Navbar';
-import Header from './components/Header';
+// import Container from './components/Container';
+import ClientList from './pages/ClientList';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Navbar />
+      <ClientList />
     </div>
   );
 }
