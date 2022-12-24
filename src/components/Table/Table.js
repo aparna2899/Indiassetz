@@ -7,24 +7,44 @@ import TableRow from './TableRow';
 const Table = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [pageSize, setPageSize] = useState(10);
-
   const pageCount = Math.ceil(data.length / pageSize);
   const startIndex = currentPage * pageSize;
   const endIndex = startIndex + pageSize;
   const pageData = data.slice(startIndex, endIndex);
+  const [isHeaderChecked, setIsHeaderChecked] = useState(false);
+  const [allCheckboxSelected, setAllCheckboxSelected] = useState(false);
 
   const handlePageChange = (page) => {
     setCurrentPage(page.selected);
   };
+
+  const handleHeaderCheckboxChange = () => {
+    setIsHeaderChecked(!isHeaderChecked);
+  };
+
+  const handleSelectAllCheckBox = () => {
+    if (isHeaderChecked) setAllCheckboxSelected(true);
+    else setAllCheckboxSelected(false);
+  };
+
   return (
     <>
       <table className="w-full text-left table-collapse bg-white rounded-t-lg">
         <thead>
-          <TableHeader data={data[0]} />
+          <TableHeader
+            data={data[0]}
+            isHeaderChecked={isHeaderChecked}
+            handleHeaderCheckboxChange={handleHeaderCheckboxChange}
+          />
         </thead>
         <tbody>
           {pageData.map((row, index) => (
-            <TableRow key={index} data={row} />
+            <TableRow
+              key={index}
+              data={row}
+              allCheckboxSelected={allCheckboxSelected}
+              handleSelectAllCheckBox={handleSelectAllCheckBox}
+            />
           ))}
         </tbody>
       </table>
@@ -48,7 +68,9 @@ const Table = ({ data }) => {
 };
 
 Table.propTypes = {
-  data: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
+  isHeaderChecked: PropTypes.bool,
+  handleHeaderCheckboxChange: PropTypes.func
 };
 
 export default Table;

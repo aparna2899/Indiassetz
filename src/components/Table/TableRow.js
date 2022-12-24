@@ -1,9 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Checkbox from '../Checkbox';
 
-const TableRow = ({ data }) => {
+const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox }) => {
+  console.log(allCheckboxSelected);
   return (
     <tr className="border border-lightgray hover:bg-gray-100">
+      <div className="py-6 px-4">
+        <Checkbox
+          name="selectAll"
+          isChecked={allCheckboxSelected}
+          onChange={handleSelectAllCheckBox}
+        />
+      </div>
+
       {Object.values(data).map((value, index) => {
         if (typeof value === 'object') {
           return (
@@ -30,7 +40,9 @@ const TableRow = ({ data }) => {
 };
 
 TableRow.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  allCheckboxSelected: PropTypes.bool,
+  handleSelectAllCheckBox: PropTypes.func
 };
 
 export default TableRow;
