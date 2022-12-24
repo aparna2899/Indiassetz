@@ -26,7 +26,7 @@ export default function ClientList() {
   };
 
   return (
-    <Container>
+    <Container pathToImg="profilepic.png" buttonText="Add Client">
       <HeadingBox heading="Clients" description={`Total ${data.length} "All" Records`} />
       <Filter
         options={options}

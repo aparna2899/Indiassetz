@@ -1,8 +1,11 @@
 import { ArrowLeftIcon, BellAlertIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { PlusIcon } from '@heroicons/react/20/solid';
 import Button from './Button';
+import ProfilePic from './ProfilePic';
+import PropTypes from 'prop-types';
 
-export default function Header() {
+export default function Header({ pathToImg, buttonText }) {
+  console.log(buttonText);
   return (
     <div className="mx-auto flex items-center justify-between">
       <div className="w-3/5 flex items-center">
@@ -28,7 +31,7 @@ export default function Header() {
         <Button
           type="button"
           className="text-white bg-blue w-40 mx-5 justify-center hover:bg-sky-900"
-          buttonText="Add client">
+          buttonText={buttonText}>
           <div className="bg-white rounded-full mr-3">
             <PlusIcon className="h-5 w-5 text-blue" aria-hidden="true" />
           </div>
@@ -36,10 +39,13 @@ export default function Header() {
         <Button type="button" className="bg-white hover:bg-neutral-200">
           <BellAlertIcon className="h-5 w-5 text-blue" />
         </Button>
-        <div className="w-12 h-12 rounded-full mx-5">
-          <img src="profilepic.png" className="w-full" />
-        </div>
+        <ProfilePic pathToImg={pathToImg} />
       </div>
     </div>
   );
 }
+
+Header.propTypes = {
+  pathToImg: PropTypes.string,
+  buttonText: PropTypes.string
+};
