@@ -5,7 +5,6 @@ import Navbar from './Navbar';
 import PropTypes from 'prop-types';
 
 const Container = ({ children, className = '' }) => {
-  console.log(children);
   return (
     <div className="w-screen h-screen bg-skyblue">
       <Navbar />
