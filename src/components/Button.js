@@ -12,7 +12,7 @@ const Button = ({ type = 'button', buttonText, onClick = noop, className = '', c
       type={type}
       onClick={handleClick}
       className={classnames(
-        'inline-flex items-center rounded-lg px-3 py-3 border-none text-base font-medium shadow-sm',
+        'inline-flex items-center rounded-lg px-3 py-3 text-base font-medium shadow-sm',
         [className]
       )}>
       {children}
