@@ -10,7 +10,8 @@ const Input = ({
   disabled,
   icon,
   rows = '4',
-  className = ''
+  className = '',
+  inputclasses = ''
 }) => {
   return (
     <div className={classnames('mb-4 mx-2 flex-1', [className])}>
@@ -32,9 +33,12 @@ const Input = ({
           />
         ) : (
           <input
-            className={`form-input py-2 border border-lightgray block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
-              disabled ? 'bg-slate-100' : 'bg-white'
-            }`}
+            className={classnames(
+              `form-input py-2 border border-lightgray block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
+                disabled ? 'bg-slate-100' : 'bg-white'
+              }`,
+              [inputclasses]
+            )}
             type={type}
             name={name}
             value={value}
