@@ -8,6 +8,19 @@ import Table from '../components/Table/Table';
 import watchlist from '../../src/data/watchlist.json';
 import orderstatus from '../../src/data/orderstatus.json';
 import Checkbox from '../components/Checkbox';
+import TotalProperties from '../components/TotalProperties';
+import DoughnutChart from '../components/Chart';
+import Card from '../components/Card';
+
+const data = {
+  labels: ['Category 1', 'Category 2'],
+  datasets: [
+    {
+      data: [15, 25],
+      backgroundColor: ['#C8D5E3', '#0E3A65']
+    }
+  ]
+};
 
 export default function ClientDetail() {
   return (
@@ -23,8 +36,58 @@ export default function ClientDetail() {
           buttonText="View Orders"></Button>
       </HeadingBox>
       <div className="flex justify-between text-right mb-4">
-        <Button buttonText="Edit" className="bg-white text-blue px-8 py-1" />
         <Button buttonText="Cart" className="bg-white text-blue px-8 py-1" />
+        <Button buttonText="Edit" className="bg-white text-blue px-8 py-1" />
+      </div>
+      <div className="bg-white px-4 py-4 rounded-3xl mb-6 flex">
+        <div className="text-center">
+          <div className="w-36">
+            <img src="Clientdetail-user.png" className="w-full" />
+          </div>
+          <TotalProperties numberOfProperty="02" />
+          <div>
+            <strong className="text-blue text-4xl font-medium">5.3Cr</strong>
+            <p className="text-sm text-blue">Net worth</p>
+          </div>
+
+          <DoughnutChart data={data} />
+        </div>
+        <div className="flex-1 mx-6">
+          <InputGroup>
+            <Input label="Client Id" value="QWERT123-XYZ" />
+            <Input label="Client Name" value="Karthik J" />
+            <Input label="Subscription Type" value="Gold" />
+          </InputGroup>
+          <InputGroup>
+            <Input
+              label="Address"
+              type="textarea"
+              value="12th Floor, C Wing, Mittal Tower, MG Road, Bangalore 
+"
+            />
+            <Input
+              label="Special note"
+              type="textarea"
+              value="Lorem ipsum dolor sit amet, consectetur.. 
+"
+            />
+          </InputGroup>
+          <InputGroup>
+            <Input label="DOB" value="19.01.1998" />
+            <Input label="Contact" value="+91 9999999999" />
+            <Input label="Email" type="email" value="xyz@gmail.com" />
+          </InputGroup>
+          <InputGroup>
+            <Input label="Occupation" value="Business" />
+            <Input label="Gender" value="Male" />
+            <Input label="Pin Code" value="560001" />
+          </InputGroup>
+          <InputGroup>
+            <Input label="City" value="Bangalore" />
+            <Input label="State" value="Karnataka" />
+            <Input label="Country" value="India" />
+          </InputGroup>
+        </div>
       </div>
       <div className="bg-white px-4 py-4 rounded-3xl mb-6">
         <InputGroupHeading heading="Investor profile" />
@@ -53,6 +116,14 @@ export default function ClientDetail() {
         </InputGroup>
       </div>
       <div className="bg-white px-4 py-4 rounded-3xl mb-6">
+        <InputGroupHeading heading="Referral Details" />
+        <InputGroup>
+          <Input label="Reffered By" value="Enter name" disabled="true" />
+          <Input label="Organisation" value="Enter organisation" disabled="true" />
+          <Input label="Email" value="Enter email" disabled="true" />
+        </InputGroup>
+      </div>
+      <div className="bg-white px-4 py-4 rounded-3xl mb-6">
         <InputGroupHeading heading="Documents" />
         <InputGroup>
           <Input label="eKYC Verification" value="-" disabled="true" />
@@ -61,22 +132,30 @@ export default function ClientDetail() {
         </InputGroup>
         <InputGroup>
           <Input label="PAN" value="-" disabled="true" />
-          <Input label="Add document" type="file" value="" disabled="" />
+          <div className="text-blue underline my-auto mx-1 flex-1 cursor-pointer">
+            + Add Document
+          </div>
           <div className="flex-1"></div>
         </InputGroup>
       </div>
-      <Table data={watchlist}>
+      <div className="bg-white px-4 py-4 rounded-3xl mb-6 flex">
+        <Input type="textarea" value="Summary" disabled="true" className="mx-0 flex-none" />
+        <Input type="textarea" value="-" disabled="true" className="mx-0" />
+      </div>
+      <Card heading="Watchlist" viewall="View all" data={watchlist}>
         <Button
+          type="button"
           buttonText="View property"
-          className="text-blue bg-transparent border border-blue py-2"
+          className="text-blue bg-transparent border border-lightgray px-2 "
         />
-      </Table>
-      <Table data={orderstatus}>
+      </Card>
+      <Card heading="Order status" viewall="View all" data={orderstatus}>
         <Button
+          type="button"
           buttonText="View details"
-          className="text-blue bg-transparent border border-blue py-2"
+          className="text-blue bg-transparent border border-lightgray px-2 "
         />
-      </Table>
+      </Card>
     </Container>
   );
 }

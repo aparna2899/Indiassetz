@@ -5,8 +5,7 @@
     "Type": "11223311",
     "Order": "Buy",
     "Date & Time": "14-10-2022, 10:30",
-    "Status": "Drop Off",
-    "IA valuation": "2.2Cr"
+    "Status": "Drop Off"
   },
   {
     "Property Id": "QW12345@",
@@ -14,7 +13,6 @@
     "Type": "11223311",
     "Order": "Buy",
     "Date & Time": "14-10-2022, 10:30",
-    "Status": "Drop Off",
-    "IA valuation": "2.2Cr"
+    "Status": "Cancelled"
   }
 ]
