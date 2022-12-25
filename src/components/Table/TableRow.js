@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from '../Checkbox';
 
-const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox }) => {
+const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox, children }) => {
   console.log(allCheckboxSelected);
   return (
     <tr className="border border-lightgray hover:bg-gray-100">
@@ -35,6 +35,7 @@ const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox }) => {
           );
         }
       })}
+      {children}
     </tr>
   );
 };

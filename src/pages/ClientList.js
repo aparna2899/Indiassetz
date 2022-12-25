@@ -4,6 +4,7 @@ import HeadingBox from '../components/HeadingBox';
 import Table from '../components/Table/Table';
 import Button from '../components/Button';
 import Filter from '../components/FilterOptions';
+import Checkbox from '../components/Checkbox';
 import data from '../data/data.json';
 
 // const options = ['All', 'Sell', 'Buy', 'Rent', 'Lease'];
