@@ -13,7 +13,3 @@ InputGroup.prototype = {
 };
 
 export default InputGroup;
-
-// sm:flex-col md:flex-col max-[640]:flex-col
-
-//

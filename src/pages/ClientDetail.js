@@ -4,6 +4,10 @@ import Button from '../components/Button';
 import Input from '../components/Input';
 import InputGroup from '../components/InputGroup';
 import InputGroupHeading from '../components/InputGroupHeading';
+import Table from '../components/Table/Table';
+import watchlist from '../../src/data/watchlist.json';
+import orderstatus from '../../src/data/orderstatus.json';
+import Checkbox from '../components/Checkbox';
 
 export default function ClientDetail() {
   return (
@@ -61,6 +65,18 @@ export default function ClientDetail() {
           <div className="flex-1"></div>
         </InputGroup>
       </div>
+      <Table data={watchlist}>
+        <Button
+          buttonText="View property"
+          className="text-blue bg-transparent border border-blue py-2"
+        />
+      </Table>
+      <Table data={orderstatus}>
+        <Button
+          buttonText="View details"
+          className="text-blue bg-transparent border border-blue py-2"
+        />
+      </Table>
     </Container>
   );
 }

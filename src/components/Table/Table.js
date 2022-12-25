@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import TableHeader from './TableHeader';
 import TableRow from './TableRow';
 
-const Table = ({ data }) => {
+const Table = ({ data, children }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [pageSize, setPageSize] = useState(10);
   const pageCount = Math.ceil(data.length / pageSize);
@@ -43,8 +43,9 @@ const Table = ({ data }) => {
               key={index}
               data={row}
               allCheckboxSelected={allCheckboxSelected}
-              handleSelectAllCheckBox={handleSelectAllCheckBox}
-            />
+              handleSelectAllCheckBox={handleSelectAllCheckBox}>
+              {children}
+            </TableRow>
           ))}
         </tbody>
       </table>
