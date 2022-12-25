@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
-const HeadingBox = ({ heading, children, description }) => {
+const HeadingBox = ({ heading, children, description, className = '' }) => {
   return (
-    <div className="bg-white p-4 flex flex-col md:flex-row rounded-lg mb-8">
+    <div
+      className={classnames('bg-white p-4 flex flex-col md:flex-row rounded-lg mb-8', [className])}>
       <div className="md:w-1/2">
         {heading && <h2 className="text-lg text-blue font-medium mb-2">{heading}</h2>}
         {description && <p className=" text-blue font-light">{description}</p>}
