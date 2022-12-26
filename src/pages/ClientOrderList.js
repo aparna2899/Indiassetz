@@ -6,7 +6,7 @@ import InputGroup from '../components/InputGroup';
 
 export default function ClientOrderList() {
   return (
-    <Container pathToImg="clientorderlist-profilepic.png" buttonText="Add Order">
+    <Container pathToImg="clientorderlist-profilepic.png" buttonText="Add property">
       <HeadingBox heading="Karthik’s Orders" description="Total 1240 “All” Records" />
       <div className="bg-white px-4 py-4 rounded-3xl mb-6 flex">
         <div className="text-center">
