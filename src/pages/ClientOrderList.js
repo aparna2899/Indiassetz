@@ -96,7 +96,7 @@ export default function ClientOrderList() {
           </div>
         </div>
       </div>
-      <div className="w-24 h-24 absolute bottom-20 right-10">
+      <div className="w-24 h-24 fixed bottom-12 right-10">
         <img src="message.png" className="w-full" />
       </div>
     </Container>
