@@ -34,7 +34,7 @@ const Input = ({
         ) : (
           <input
             className={classnames(
-              `form-input py-2 border border-lightgray block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
+              `form-input py-4 border border-lightgray block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
                 disabled ? 'bg-slate-100' : 'bg-white'
               }`,
               [inputclasses]

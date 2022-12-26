@@ -2,13 +2,30 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js';
 Chart.register(ArcElement);
+import classnames from 'classnames';
 
-const DoughnutChart = ({ data }) => {
+const data = {
+  labels: ['Category 1', 'Category 2'],
+  datasets: [
+    {
+      data: [15, 25],
+      backgroundColor: ['#C8D5E3', '#0E3A65']
+    }
+  ]
+};
+
+const DoughnutChart = ({ className = '', chartClasses = '', innerTextClasses = '' }) => {
   return (
-    <div className="my-6 relative">
-      <Doughnut data={data} cutoutPercentage={10} className="mx-auto w-20 h-20" />
-      <span className="absolute inset-1/4 text-red mt-1">65%</span>
-      <p className="text-sm text-blue ">Profile completion status</p>
+    <div className={classnames('flex my-6 relative', [className])}>
+      <Doughnut
+        data={data}
+        cutoutPercentage={10}
+        className={classnames('mx-auto w-20 h-20', [chartClasses])}
+      />
+      <span className={classnames('absolute inset-1/4 text-red mt-1', [innerTextClasses])}>
+        65%
+      </span>
+      <p className="text-sm text-gray text-center mt-2">Profile completion</p>
     </div>
   );
 };
