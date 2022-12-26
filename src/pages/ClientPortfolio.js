@@ -5,7 +5,7 @@ import Input from '../components/Input';
 import InputGroup from '../components/InputGroup';
 import TotalProperties from '../components/TotalProperties';
 import data from '../../src/data/propertyDetail.json';
-import PropertyDetail from '../components/PropertyDetail';
+import PropertyDetail from '../components/ClientProperty';
 
 export default function ClientPortfolio() {
   return (
@@ -28,8 +28,8 @@ export default function ClientPortfolio() {
               <Input label="Contact" value="+91 9999999999" disabled="true" />
             </InputGroup>
           </div>
-          <div className="text-center bg-slate-100/50 border border-lightgray px-8 ml-10 rounded-md">
-            <TotalProperties numberOfProperty="02" />
+          <div className=" text-center bg-slate-100/50 border border-lightgray px-8 ml-10  my-5 rounded-md">
+            <TotalProperties numberOfProperty="02" className="flex-col-reverse" />
           </div>
         </div>
         <InputGroup>

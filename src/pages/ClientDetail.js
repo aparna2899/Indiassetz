@@ -12,16 +12,6 @@ import TotalProperties from '../components/TotalProperties';
 import DoughnutChart from '../components/Chart';
 import Card from '../components/Card';
 
-const data = {
-  labels: ['Category 1', 'Category 2'],
-  datasets: [
-    {
-      data: [15, 25],
-      backgroundColor: ['#C8D5E3', '#0E3A65']
-    }
-  ]
-};
-
 export default function ClientDetail() {
   return (
     <Container pathToImg="client-detail-profile-pic.png" buttonText="Add Property">
@@ -50,7 +40,7 @@ export default function ClientDetail() {
             <p className="text-sm text-blue">Net worth</p>
           </div>
 
-          <DoughnutChart data={data} />
+          <DoughnutChart />
         </div>
         <div className="flex-1 mx-6">
           <InputGroup>

@@ -14,5 +14,37 @@
     "Order": "Buy",
     "Date & Time": "14-10-2022, 10:30",
     "Status": "Cancelled"
+  },
+  {
+    "Property Id": "QW12345@",
+    "Title": "Karthik J",
+    "Type": "11223311",
+    "Order": "Buy",
+    "Date & Time": "14-10-2022, 10:30",
+    "Status": "Order Placed"
+  },
+  {
+    "Property Id": "QW12345@",
+    "Title": "Karthik J",
+    "Type": "11223311",
+    "Order": "Buy",
+    "Date & Time": "14-10-2022, 10:30",
+    "Status": "Order Placed"
+  },
+  {
+    "Property Id": "QW12345@",
+    "Title": "Karthik J",
+    "Type": "11223311",
+    "Order": "Buy",
+    "Date & Time": "14-10-2022, 10:30",
+    "Status": "Closed"
+  },
+  {
+    "Property Id": "QW12345@",
+    "Title": "Karthik J",
+    "Type": "11223311",
+    "Order": "Buy",
+    "Date & Time": "14-10-2022, 10:30",
+    "Status": "Closed"
   }
 ]

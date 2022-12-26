@@ -11,7 +11,8 @@
     "Rooms": 4,
     "Bathrooms": 3,
     "Area": "3,540 Sqft",
-    "Images": ["OrderSell.png", "property1-02.png", "property1-03.png", "property1-02.png"]
+    "Images": ["OrderSell.png", "property1-02.png", "property1-03.png", "property1-02.png"],
+    "Amenities": ["Swimming Pool", "Gym", "Intercom", "Security Camera", "Lift"]
   },
   {
     "Property_ID": "PR1222111",
@@ -25,6 +26,7 @@
     "Rooms": 4,
     "Bathrooms": 3,
     "Area": "3,540 Sqft",
-    "Images": ["OrderSell.png", "property1-02.png", "property1-03.png", "property1-02.png"]
+    "Images": ["OrderSell.png", "property1-02.png", "property1-03.png", "property1-02.png"],
+    "Amenities": ["Swimming Pool", "Gym", "Intercom", "Security Camera", "Lift"]
   }
 ]

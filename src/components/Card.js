@@ -1,6 +1,8 @@
-export default function Card({ heading, viewall, data, children }) {
+import classnames from 'classnames';
+
+export default function Card({ heading, viewall, data, className = '', children }) {
   return (
-    <div className="rounded-b-2xl my-6">
+    <div className={classnames('rounded-b-2xl my-6', [className])}>
       <div className="bg-blue text-white p-6 flex justify-between rounded-t-2xl">
         <strong className="text-xl font-medium">{heading}</strong>
         <span className="underline">{viewall}</span>
