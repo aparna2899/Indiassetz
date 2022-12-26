@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 
 const noop = () => {};
 
-const Button = ({ type = 'button', buttonText, onClick = noop, className = '', children }) => {
+const Button = ({
+  type = 'button',
+  buttonText,
+  onClick = noop,
+  className = '',
+  children,
+  disabled
+}) => {
   const handleClick = (e) => {
     return onClick(e);
   };
@@ -11,8 +18,9 @@ const Button = ({ type = 'button', buttonText, onClick = noop, className = '', c
     <button
       type={type}
       onClick={handleClick}
+      disabled={disabled}
       className={classnames(
-        'inline-flex items-center rounded-lg px-3 py-3 text-base font-medium shadow-sm',
+        'inline-flex items-center rounded-lg px-3 py-3 text-base font-medium shadow-sm cursor-pointer',
         [className]
       )}>
       {children}

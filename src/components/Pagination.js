@@ -9,8 +9,6 @@ const Pagination = ({
   currentPage,
   totalData
 }) => {
-  const previousDisabled = currentPage === 1;
-  const nextDisabled = currentPage === totalPages;
   return (
     <div className="flex justify-end items-center">
       <div>
@@ -27,13 +25,13 @@ const Pagination = ({
         <Button
           buttonText="<"
           onClick={paginateBack}
-          disabled={previousDisabled}
+          disabled={currentPage === 1 ? true : false}
           className="bg-blue text-white py-1 rounded-none"></Button>
         <span className="font-bold mx-4">{currentPage}</span>
         <Button
           buttonText=">"
           onClick={paginateFront}
-          disabled={nextDisabled}
+          disabled={currentPage === totalPages ? true : false}
           className="bg-blue text-white py-1 rounded-none"></Button>
       </div>
     </div>

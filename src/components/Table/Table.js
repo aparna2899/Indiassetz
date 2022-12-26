@@ -20,11 +20,11 @@ const Table = ({ data, children }) => {
 
   const handleHeaderCheckboxChange = () => {
     setIsHeaderChecked(!isHeaderChecked);
+    setAllCheckboxSelected(!allCheckboxSelected);
   };
 
   const handleSelectAllCheckBox = () => {
-    if (isHeaderChecked) setAllCheckboxSelected(true);
-    else setAllCheckboxSelected(false);
+    setAllCheckboxSelected(!allCheckboxSelected);
   };
 
   return (

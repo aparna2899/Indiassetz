@@ -1,0 +1,226 @@
+{
+  "Sell": [
+    {
+      "Name": "Karthik J",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Preran",
+      "Type": "Gold",
+      "Email": "def@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Anurag",
+      "Type": "Silver",
+      "Email": "ghi@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Lalith",
+      "Type": "Gold",
+      "Email": "jkl@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    }
+  ],
+  "Buy": [
+    {
+      "Name": "Vinay",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "John",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Karthik J",
+      "Type": "Gold",
+      "Email": "efg@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Preran",
+      "Type": "Silver",
+      "Email": "lmn@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "John",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Lalith",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    }
+  ],
+  "Rent": [
+    {
+      "Name": "John",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "John",
+      "Type": "Gold",
+      "Email": "abc@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Vinay",
+      "Type": "Gold",
+      "Email": "qwe@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    }
+  ],
+  "Lease": [
+    {
+      "Name": "Preran",
+      "Type": "Gold",
+      "Email": "kwe@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Lalith",
+      "Type": "Gold",
+      "Email": "lmn@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "John",
+      "Type": "Gold",
+      "Email": "pqr@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Bangalore",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "John",
+      "Type": "Gold",
+      "Email": "asd@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Etawah",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    },
+    {
+      "Name": "Preran",
+      "Type": "Gold",
+      "Email": "ijk@gmail.com",
+      "Valuation": "2.2Cr",
+      "Contact": "91 - 12345678",
+      "Branch": "Mainpuri",
+      "PRM": {
+        "Assign": "Assign",
+        "Nalini": "Nalini"
+      }
+    }
+  ]
+}

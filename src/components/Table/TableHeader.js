@@ -7,11 +7,7 @@ const TableHeader = ({ data, isHeaderChecked, handleHeaderCheckboxChange }) => {
   return (
     <tr className="bg-blue text-white rounded-t-2xl">
       <div className="py-6 px-4">
-        <Checkbox
-          name="selectAll"
-          isChecked={isHeaderChecked}
-          onChange={handleHeaderCheckboxChange}
-        />
+        <Checkbox isChecked={isHeaderChecked} onChange={handleHeaderCheckboxChange} />
       </div>
       {Object.keys(data).map((key, index) => (
         <th key={index} className="py-6 px-4 font-normal text-sm">
