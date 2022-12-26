@@ -14,13 +14,16 @@ import Card from '../components/Card';
 import { Link } from 'react-router-dom';
 
 export default function ClientDetail() {
+  const data = orderstatus.filter(
+    (order) => order.Status === 'Drop Off' || order.Status === 'Cancelled'
+  );
   return (
     <Container pathToImg="client-detail-profile-pic.png" buttonText="Add Property">
-      <HeadingBox heading="Detail">
+      <HeadingBox heading="Karthik's Detail" className="items-center">
         <Link to="/client-portfolio">
           <Button
             type="button"
-            className="text-white bg-blue w-40 mx-5 py-1 justify-center hover:bg-sky-900"
+            className="text-white bg-blue w-40 mx-5 py-2 justify-center hover:bg-sky-900"
             buttonText="View Properties"></Button>
         </Link>
         <Link to="/client-order-list">
@@ -39,13 +42,13 @@ export default function ClientDetail() {
           <div className="w-36">
             <img src="Clientdetail-user.png" className="w-full" />
           </div>
-          <TotalProperties numberOfProperty="02" />
+          <TotalProperties numberOfProperty="02" className="flex-col" />
           <div>
             <strong className="text-blue text-4xl font-medium">5.3Cr</strong>
             <p className="text-sm text-blue">Net worth</p>
           </div>
 
-          <DoughnutChart />
+          <DoughnutChart className="flex-col" />
         </div>
         <div className="flex-1 mx-6">
           <InputGroup>
@@ -144,7 +147,7 @@ export default function ClientDetail() {
           className="text-blue bg-transparent border border-lightgray px-2 "
         />
       </Card>
-      <Card heading="Order status" viewall="View all" data={orderstatus}>
+      <Card heading="Order status" viewall="View all" data={data}>
         <Button
           type="button"
           buttonText="View details"
