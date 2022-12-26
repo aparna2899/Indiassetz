@@ -20,6 +20,7 @@ const DoughnutChart = ({ className = '', chartClasses = '', innerTextClasses = '
       <Doughnut
         data={data}
         cutoutPercentage={10}
+        width={50}
         className={classnames('mx-auto w-20 h-20', [chartClasses])}
       />
       <span className={classnames('absolute inset-1/4 text-red mt-1', [innerTextClasses])}>
