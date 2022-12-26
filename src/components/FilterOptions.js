@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const Filter = ({ options, selectedOption, handleFilterChange }) => {
+const Filter = ({ statusList, selectedStatus, handleFilterChange }) => {
   return (
     <div className="flex items-center justify-around bg-white mb-4 rounded-lg">
-      {options.map((option) => (
+      {statusList.map((status) => (
         <Button
-          key={option}
-          buttonText={option}
-          onClick={() => handleFilterChange(option)}
+          key={status}
+          buttonText={status}
+          onClick={() => handleFilterChange(status)}
           type="button"
           className={`mx-2 my-2 py-2 px-14 rounded-md hover:bg-slate-200 ${
-            option === selectedOption ? 'bg-blue text-white' : 'shadow-none text-blue'
+            status === selectedStatus ? 'bg-blue text-white' : 'shadow-none text-blue'
           }`}></Button>
       ))}
     </div>

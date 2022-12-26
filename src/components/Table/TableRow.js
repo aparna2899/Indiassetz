@@ -4,17 +4,11 @@ import Checkbox from '../Checkbox';
 import { Link } from 'react-router-dom';
 
 const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox, children }) => {
-  console.log(allCheckboxSelected);
   return (
     <tr className="border border-lightgray hover:bg-slate-100">
       <div className="py-6 px-4">
-        <Checkbox
-          name="selectAll"
-          isChecked={allCheckboxSelected}
-          onChange={handleSelectAllCheckBox}
-        />
+        <Checkbox isChecked={allCheckboxSelected} onChange={handleSelectAllCheckBox} />
       </div>
-
       {Object.values(data).map((value, index) => {
         if (typeof value === 'object') {
           return (

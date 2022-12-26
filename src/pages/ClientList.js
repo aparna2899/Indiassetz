@@ -6,32 +6,35 @@ import Button from '../components/Button';
 import Filter from '../components/FilterOptions';
 import Checkbox from '../components/Checkbox';
 import data from '../data/data.json';
+import statusData from '../data/status.json';
 
-// const options = ['All', 'Sell', 'Buy', 'Rent', 'Lease'];
-const options = ['All', 'Bangalore', 'Etawah', 'Mainpuri'];
+// const options = ['All', 'Bangalore', 'Etawah', 'Mainpuri'];
+const statusList = ['All', 'Sell', 'Buy', 'Rent', 'Lease'];
 
 export default function ClientList() {
-  const [selectedOption, setSelectedOption] = useState('All');
+  // const [selectedOption, setSelectedOption] = useState('All');
   const [filteredData, setFilteredData] = useState(data);
+  const [selectedStatus, setSelectedStatus] = useState('All');
+
+  const handleFilterChange = (status) => {
+    setSelectedStatus(status);
+    if (status === 'All') {
+      setFilteredData(data);
+    } else {
+      setFilteredData(statusData[status]);
+    }
+  };
 
   const handleChange = (event) => {
     console.log(event.target.checked);
-  };
-  const handleFilterChange = (option) => {
-    setSelectedOption(option);
-    if (option === 'All') {
-      setFilteredData(data);
-    } else {
-      setFilteredData(data.filter((item) => item.Branch === option));
-    }
   };
 
   return (
     <Container pathToImg="profilepic.png" buttonText="Add Client">
       <HeadingBox heading="Clients" description={`Total ${data.length} "All" Records`} />
       <Filter
-        options={options}
-        selectedOption={selectedOption}
+        statusList={statusList}
+        selectedStatus={selectedStatus}
         handleFilterChange={handleFilterChange}
       />
       <div className="text-right mb-4">
