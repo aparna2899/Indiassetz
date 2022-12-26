@@ -2,13 +2,15 @@
 import ClientDetail from './pages/ClientDetail';
 import ClientList from './pages/ClientList';
 import ClientOrderList from './pages/ClientOrderList';
+import ClientPortfolio from './pages/ClientPortfolio';
 
 function App() {
   return (
     <div className="App">
       {/* <ClientList /> */}
       {/* <ClientDetail /> */}
-      <ClientOrderList />
+      {/* <ClientOrderList /> */}
+      <ClientPortfolio />
     </div>
   );
 }

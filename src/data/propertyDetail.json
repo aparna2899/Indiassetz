@@ -1,0 +1,30 @@
+[
+  {
+    "Property_ID": "PR1222165",
+    "Name": "Queen's Apartment",
+    "Type": "Residential",
+    "Address": "No: 5, 2nd cross road Nagasandra, Bengaluru 560010",
+    "City": "Bengaluru",
+    "State": "Karnataka",
+    "Furnish_Type": "Furnished",
+    "Price": "₹ 1.8 Crore",
+    "Rooms": 4,
+    "Bathrooms": 3,
+    "Area": "3,540 Sqft",
+    "Images": ["OrderSell.png", "property1-02.png", "property1-03.png", "property1-02.png"]
+  },
+  {
+    "Property_ID": "PR1222111",
+    "Name": "Queen's Apartment",
+    "Type": "Residential",
+    "Address": "No: 5, 2nd cross road Nagasandra, Bengaluru 560010",
+    "City": "Bengaluru",
+    "State": "Karnataka",
+    "Furnish_Type": "Furnished",
+    "Price": "₹ 2.2 Crore",
+    "Rooms": 4,
+    "Bathrooms": 3,
+    "Area": "3,540 Sqft",
+    "Images": ["OrderSell.png", "property1-02.png", "property1-03.png", "property1-02.png"]
+  }
+]
