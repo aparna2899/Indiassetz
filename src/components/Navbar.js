@@ -37,13 +37,13 @@ const Navbar = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="mt-5 mx-6 px-2 pb-4 space-y-1 flex flex-grow flex-col max-[640px]:h-screen max-[640px] sm:h-screen md:h-screen">
+          <div className="mt-5 mx-6 px-2 pb-12 space-y-1 flex flex-grow flex-col max-[640px]:h-screen max-[640px] sm:h-screen md:h-screen">
             <nav className="flex-1 border-t border-t-lightgray">
               {navigation.map((item) => (
                 <NavItem key={item.name} {...item} />
               ))}
             </nav>
-            <div className="pb-12 px-2 flex items-center">
+            <div className="px-2 py-2 flex items-center cursor-pointer hover:bg-slate-200 hover:rounded-md">
               <div className="w-4">
                 <img src="logout.png" className="w-full" />
               </div>

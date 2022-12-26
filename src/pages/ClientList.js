@@ -35,7 +35,7 @@ export default function ClientList() {
         handleFilterChange={handleFilterChange}
       />
       <div className="text-right mb-4">
-        <Button buttonText="Filter" className="bg-white text-blue px-8 py-1" />
+        <Button buttonText="Filter" className="bg-white text-blue px-8 py-1 hover:bg-lightgray" />
       </div>
       <Table data={filteredData} handleChange={handleChange} />
     </Container>

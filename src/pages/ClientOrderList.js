@@ -16,15 +16,15 @@ export default function ClientOrderList() {
         </div>
         <div className="flex-1 mx-6">
           <InputGroup>
-            <Input label="Name" value="Karthik J" disabled="true" />
-            <Input label="Client Id" value="QWERT-123" disabled="true" />
-            <Input label="Subscription Type" value="Gold" disabled="true" />
+            <Input label="Name" value="Karthik J" />
+            <Input label="Client Id" value="QWERT-123" />
+            <Input label="Subscription Type" value="Gold" />
           </InputGroup>
 
           <InputGroup>
-            <Input label="Email" type="email" value="xyz@gmail.com" disabled="true" />
-            <Input label="Contact" value="+91 9999999999" disabled="true" />
-            <Input label="Lead From" value="Website" disabled="true" />
+            <Input label="Email" type="email" value="xyz@gmail.com" />
+            <Input label="Contact" value="+91 9999999999" />
+            <Input label="Lead From" value="Website" />
           </InputGroup>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function ClientOrderList() {
           <Button
             type="button"
             buttonText="View"
-            className="bg-lightgray py-1 px-5 text-blue font-normal text-sm"
+            className="bg-lightgray py-1 px-5 text-blue font-normal text-sm hover:bg-blue hover:text-white"
           />
         </div>
         <div className="flex">
@@ -45,20 +45,19 @@ export default function ClientOrderList() {
           </div>
           <div className="flex-1 mx-6">
             <InputGroup>
-              <Input label="Property Name" value="Summer house" disabled="true" />
-              <Input label="Order Id" value="QWERT-123" disabled="true" />
-              <Input label="Subscription Type" value="Gold" disabled="true" />
+              <Input label="Property Name" value="Summer house" />
+              <Input label="Order Id" value="QWERT-123" />
+              <Input label="Subscription Type" value="Gold" />
             </InputGroup>
 
             <InputGroup>
               <Input
                 label="Order status"
                 value="Site visit"
-                disabled="true"
                 inputclasses="border border-green-500"
               />
-              <Input label="Contact" value="+91 9999999999" disabled="true" />
-              <Input label="Lead From" value="Website" disabled="true" />
+              <Input label="Contact" value="+91 9999999999" />
+              <Input label="Lead From" value="Website" />
             </InputGroup>
           </div>
         </div>
@@ -69,7 +68,7 @@ export default function ClientOrderList() {
           <Button
             type="button"
             buttonText="View"
-            className="bg-lightgray py-1 px-5 text-blue font-normal text-sm"
+            className="bg-lightgray py-1 px-5 text-blue font-normal text-sm hover:bg-blue hover:text-white"
           />
         </div>
         <div className="flex">
@@ -80,20 +79,19 @@ export default function ClientOrderList() {
           </div>
           <div className="flex-1 mx-6">
             <InputGroup>
-              <Input label="Property Name" value="Summer house" disabled="true" />
-              <Input label="Order Id" value="QWERT-123" disabled="true" />
-              <Input label="Subscription Type" value="Gold" disabled="true" />
+              <Input label="Property Name" value="Summer house" />
+              <Input label="Order Id" value="QWERT-123" />
+              <Input label="Subscription Type" value="Gold" />
             </InputGroup>
 
             <InputGroup>
               <Input
                 label="Order status"
                 value="Site visit"
-                disabled="true"
                 inputclasses="border border-green-500"
               />
-              <Input label="Contact" value="+91 9999999999" disabled="true" />
-              <Input label="Lead From" value="Website" disabled="true" />
+              <Input label="Contact" value="+91 9999999999" />
+              <Input label="Lead From" value="Website" />
             </InputGroup>
           </div>
         </div>

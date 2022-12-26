@@ -85,7 +85,7 @@ export default function ClientProperty({ data }) {
         <div className="absolute right-5 bottom-0">
           <Button
             buttonText="View details"
-            className="bg-slate-100 text-blue px-6"
+            className="bg-slate-100 text-blue px-6 hover:bg-red hover:text-white"
             onClick={handleClick}></Button>
         </div>
         {openDetails ? (

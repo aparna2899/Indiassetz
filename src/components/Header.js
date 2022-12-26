@@ -3,13 +3,21 @@ import { PlusIcon } from '@heroicons/react/20/solid';
 import Button from './Button';
 import ProfilePic from './ProfilePic';
 import PropTypes from 'prop-types';
+import { useHistory } from 'react-router-dom';
 
 export default function Header({ pathToImg, buttonText }) {
-  console.log(buttonText);
+  let history = useHistory();
+  function handleClick() {
+    history.push('/');
+  }
+
   return (
     <div className="mx-auto flex items-center justify-between">
       <div className="w-3/5 flex items-center">
-        <Button type="button" className="text-white bg-white hover:bg-neutral-200">
+        <Button
+          type="button"
+          onClick={handleClick}
+          className="text-white bg-white hover:bg-neutral-200">
           <div className="h-5 w-5 bg-blue rounded-full ">
             <ArrowLeftIcon />
           </div>
