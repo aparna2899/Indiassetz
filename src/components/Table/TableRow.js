@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from '../Checkbox';
+import { Link } from 'react-router-dom';
 
 const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox, children }) => {
   console.log(allCheckboxSelected);
@@ -30,7 +31,7 @@ const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox, children
         } else {
           return (
             <td key={index} className="px-4 py-4 text-sm">
-              {value}
+              <Link to="/client-detail">{value}</Link>
             </td>
           );
         }

@@ -1,17 +1,12 @@
-// import Container from './components/Container';
-import ClientDetail from './pages/ClientDetail';
-import ClientList from './pages/ClientList';
-import ClientOrderList from './pages/ClientOrderList';
-import ClientPortfolio from './pages/ClientPortfolio';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      {/* <ClientList /> */}
-      {/* <ClientDetail /> */}
-      {/* <ClientOrderList /> */}
-      <ClientPortfolio />
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 
