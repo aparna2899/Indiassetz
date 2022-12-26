@@ -6,15 +6,18 @@ import InputGroup from '../components/InputGroup';
 import TotalProperties from '../components/TotalProperties';
 import data from '../../src/data/propertyDetail.json';
 import PropertyDetail from '../components/ClientProperty';
+import { Link } from 'react-router-dom';
 
 export default function ClientPortfolio() {
   return (
     <Container pathToImg="client-portfolio-profilepic.png" buttonText="Add Order">
       <HeadingBox heading="Karthik’s Portfolio">
-        <Button
-          type="button"
-          className="text-blue bg-transparent border-2 border-blue w-40 mx-5 py-1 justify-center shadow-none"
-          buttonText="View Orders"></Button>
+        <Link to="/client-order-list">
+          <Button
+            type="button"
+            className="text-blue bg-transparent border-2 border-blue w-40 mx-5 py-1 justify-center shadow-none"
+            buttonText="View Orders"></Button>
+        </Link>
       </HeadingBox>
       <div className="bg-white px-4 py-4 rounded-3xl mb-6">
         <div className="flex">

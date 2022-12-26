@@ -11,19 +11,24 @@ import Checkbox from '../components/Checkbox';
 import TotalProperties from '../components/TotalProperties';
 import DoughnutChart from '../components/Chart';
 import Card from '../components/Card';
+import { Link } from 'react-router-dom';
 
 export default function ClientDetail() {
   return (
     <Container pathToImg="client-detail-profile-pic.png" buttonText="Add Property">
       <HeadingBox heading="Detail">
-        <Button
-          type="button"
-          className="text-white bg-blue w-40 mx-5 py-1 justify-center hover:bg-sky-900"
-          buttonText="View Properties"></Button>
-        <Button
-          type="button"
-          className="text-blue bg-transparent border-2 border-blue w-40 mx-5 py-1 justify-center shadow-none"
-          buttonText="View Orders"></Button>
+        <Link to="/client-portfolio">
+          <Button
+            type="button"
+            className="text-white bg-blue w-40 mx-5 py-1 justify-center hover:bg-sky-900"
+            buttonText="View Properties"></Button>
+        </Link>
+        <Link to="/client-order-list">
+          <Button
+            type="button"
+            className="text-blue bg-transparent border-2 border-blue w-40 mx-5 py-1 justify-center shadow-none"
+            buttonText="View Orders"></Button>
+        </Link>
       </HeadingBox>
       <div className="flex justify-between text-right mb-4">
         <Button buttonText="Cart" className="bg-white text-blue px-8 py-1" />
