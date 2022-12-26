@@ -23,19 +23,19 @@ export default function ClientDetail() {
         <Link to="/client-portfolio">
           <Button
             type="button"
-            className="text-white bg-blue w-40 mx-5 py-2 justify-center hover:bg-sky-900"
+            className="text-white bg-blue w-40 mx-5 py-2 justify-center hover:bg-sky-800"
             buttonText="View Properties"></Button>
         </Link>
         <Link to="/client-order-list">
           <Button
             type="button"
-            className="text-blue bg-transparent border-2 border-blue w-40 mx-5 py-1 justify-center shadow-none"
+            className="text-blue bg-transparent border-2 border-blue w-40 mx-5 py-1 justify-center shadow-none hover:bg-slate-200"
             buttonText="View Orders"></Button>
         </Link>
       </HeadingBox>
       <div className="flex justify-between text-right mb-4">
-        <Button buttonText="Cart" className="bg-white text-blue px-8 py-1" />
-        <Button buttonText="Edit" className="bg-white text-blue px-8 py-1" />
+        <Button buttonText="Cart" className="bg-white text-blue px-8 py-1 hover:bg-slate-200" />
+        <Button buttonText="Edit" className="bg-white text-blue px-8 py-1 hover:bg-slate-200" />
       </div>
       <div className="bg-white px-4 py-4 rounded-3xl mb-6 flex">
         <div className="text-center">
@@ -144,14 +144,14 @@ export default function ClientDetail() {
         <Button
           type="button"
           buttonText="View property"
-          className="text-blue bg-transparent border border-lightgray px-2 "
+          className="text-blue bg-transparent border border-lightgray px-2 hover:bg-lightgray"
         />
       </Card>
       <Card heading="Order status" viewall="View all" data={data}>
         <Button
           type="button"
           buttonText="View details"
-          className="text-blue bg-transparent border border-lightgray px-2 "
+          className="text-blue bg-transparent border border-lightgray px-2 hover:bg-lightgray"
         />
       </Card>
     </Container>

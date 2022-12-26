@@ -11,7 +11,7 @@ const Filter = ({ options, selectedOption, handleFilterChange }) => {
           buttonText={option}
           onClick={() => handleFilterChange(option)}
           type="button"
-          className={`mx-2 my-2 py-2 px-14 rounded-md ${
+          className={`mx-2 my-2 py-2 px-14 rounded-md hover:bg-slate-200 ${
             option === selectedOption ? 'bg-blue text-white' : 'shadow-none text-blue'
           }`}></Button>
       ))}

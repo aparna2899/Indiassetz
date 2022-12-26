@@ -5,7 +5,9 @@ export default function Card({ heading, viewall, data, className = '', children 
     <div className={classnames('rounded-b-2xl my-6', [className])}>
       <div className="bg-blue text-white p-6 flex justify-between rounded-t-2xl">
         <strong className="text-xl font-medium">{heading}</strong>
-        <span className="underline">{viewall}</span>
+        <span className="underline cursor-pointer hover:no-underline hover:bg-white hover:px-2 hover:text-blue hover:rounded-2xl">
+          {viewall}
+        </span>
       </div>
       <table className="w-full rounded-b-2xl">
         <thead className=" bg-[#6C89A4] w-full">
