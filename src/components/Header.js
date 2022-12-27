@@ -3,12 +3,16 @@ import { PlusIcon } from '@heroicons/react/20/solid';
 import Button from './Button';
 import ProfilePic from './ProfilePic';
 import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 export default function Header({ pathToImg, buttonText }) {
-  let history = useHistory();
+  const history = useHistory();
+  const location = useLocation();
   function handleClick() {
-    history.push('/');
+    const previousUrl = location.pathname;
+    if (previousUrl !== '/') {
+      history.goBack();
+    }
   }
 
   return (
