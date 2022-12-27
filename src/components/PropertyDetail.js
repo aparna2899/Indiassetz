@@ -23,9 +23,13 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
         <h1 className="text-2xl text-blue font-medium">Property details</h1>
         <Button buttonText="X" onClick={handleClick} className="bg-lightgray py-1" />
       </div>
-      <div className="underline text-blue text-right pt-24 pb-10 font-base cursor-pointer">
-        Edit
+      <div className="flex justify-end items-center pt-24 pb-10 ">
+        <div className="w-4 mx-1">
+          <img src="EditIcon.png" className="w-full" />
+        </div>
+        <span className="underline text-blue font-base cursor-pointer inline-block">Edit</span>
       </div>
+
       <div className="flex items-center">
         <div className="w-96 h-44 flex-1">
           <img src="property1-01.png" className="w-full h-full object-cover rounded-2xl" />

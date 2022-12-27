@@ -34,8 +34,16 @@ export default function ClientDetail() {
         </Link>
       </HeadingBox>
       <div className="flex justify-between text-right mb-4">
-        <Button buttonText="Cart" className="bg-white text-blue px-8 py-1 hover:bg-slate-200" />
-        <Button buttonText="Edit" className="bg-white text-blue px-8 py-1 hover:bg-slate-200" />
+        <Button buttonText="Cart" className="bg-white text-blue px-8 py-1 hover:bg-slate-200">
+          <div className="w-4 mx-1">
+            <img src="Cart.png" className="w-full" />
+          </div>
+        </Button>
+        <Button buttonText="Edit" className="bg-white text-blue px-8 py-1 hover:bg-slate-200">
+          <div className="w-4 mx-1">
+            <img src="EditIcon.png" className="w-full" />
+          </div>
+        </Button>
       </div>
       <div className="bg-white px-4 py-4 rounded-3xl mb-6 flex">
         <div className="text-center">

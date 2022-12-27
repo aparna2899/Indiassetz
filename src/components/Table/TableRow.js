@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from '../Checkbox';
 import { Link } from 'react-router-dom';
 
-const TableRow = ({ data, allCheckboxSelected, handleSelectAllCheckBox, children }) => {
+const TableRow = ({ data, allCheckboxSelected, children }) => {
+  const [state, setState] = useState(allCheckboxSelected);
   return (
     <tr className="border border-lightgray hover:bg-slate-100">
       <div className="py-6 px-4">
-        <Checkbox isChecked={allCheckboxSelected} onChange={handleSelectAllCheckBox} />
+        <Checkbox isChecked={allCheckboxSelected || state} onChange={() => setState(!state)} />
       </div>
       {Object.values(data).map((value, index) => {
         if (typeof value === 'object') {

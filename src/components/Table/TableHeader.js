@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Checkbox from '../Checkbox';
 
 const TableHeader = ({ data, isHeaderChecked, handleHeaderCheckboxChange }) => {
-  console.log(isHeaderChecked);
   return (
     <tr className="bg-blue text-white rounded-t-2xl">
       <div className="py-6 px-4">

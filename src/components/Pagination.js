@@ -26,13 +26,21 @@ const Pagination = ({
           buttonText="<"
           onClick={paginateBack}
           disabled={currentPage === 1 ? true : false}
-          className="bg-blue text-white py-1 rounded-none"></Button>
+          className={
+            currentPage === 1
+              ? 'bg-blue text-white py-1 rounded-none bg-lightgray'
+              : 'bg-blue text-white py-1 rounded-none'
+          }></Button>
         <span className="font-bold mx-4">{currentPage}</span>
         <Button
           buttonText=">"
           onClick={paginateFront}
           disabled={currentPage === totalPages ? true : false}
-          className="bg-blue text-white py-1 rounded-none"></Button>
+          className={
+            currentPage === totalPages
+              ? 'bg-blue text-white py-1 rounded-none bg-lightgray'
+              : 'bg-blue text-white py-1 rounded-none'
+          }></Button>
       </div>
     </div>
   );

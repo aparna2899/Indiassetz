@@ -23,10 +23,6 @@ const Table = ({ data, children }) => {
     setAllCheckboxSelected(!allCheckboxSelected);
   };
 
-  const handleSelectAllCheckBox = () => {
-    setAllCheckboxSelected(!allCheckboxSelected);
-  };
-
   return (
     <>
       <table className="w-full text-left table-collapse bg-white rounded-t-lg">
@@ -39,11 +35,7 @@ const Table = ({ data, children }) => {
         </thead>
         <tbody>
           {tableData.map((row, index) => (
-            <TableRow
-              key={index}
-              data={row}
-              allCheckboxSelected={allCheckboxSelected}
-              handleSelectAllCheckBox={handleSelectAllCheckBox}>
+            <TableRow key={index} data={row} allCheckboxSelected={allCheckboxSelected}>
               {children}
             </TableRow>
           ))}
