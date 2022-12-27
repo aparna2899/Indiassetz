@@ -31,7 +31,7 @@ export default function ClientPortfolio() {
               <Input label="Contact" value="+91 9999999999" />
             </InputGroup>
           </div>
-          <div className=" text-center bg-slate-100/50 border border-lightgray px-8 ml-10  my-5 rounded-md">
+          <div className="flex items-center justify-center text-center bg-slate-100/50 border border-lightgray px-8 ml-10  my-5 rounded-md">
             <TotalProperties numberOfProperty="02" className="flex-col-reverse" />
           </div>
         </div>

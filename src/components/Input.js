@@ -22,9 +22,12 @@ const Input = ({
         {icon && <span className="absolute inset-y-0 left-0 pl-3 flex items-center">{icon}</span>}
         {type === 'textarea' ? (
           <textarea
-            className={`form-input py-2 border border-lightgray block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 resize-none scroll-auto ${
-              disabled ? 'bg-slate-100' : 'bg-white'
-            }`}
+            className={classnames(
+              `form-input py-2 border border-lightgray block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 resize-none scroll-auto ${
+                disabled ? 'bg-slate-100' : 'bg-white'
+              }`,
+              [inputclasses]
+            )}
             name={name}
             value={value}
             onChange={onChange}
