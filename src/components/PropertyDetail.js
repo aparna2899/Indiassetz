@@ -35,24 +35,39 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
           <img src="property1-01.png" className="w-full h-full object-cover rounded-2xl" />
         </div>
         <div className="flex-1 mx-6">
-          <Input className="my-2" label="Client name" value="Jay shetty" disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Client name"
+            value="Jay shetty"
+          />
           <div className="flex">
-            <Input className="my-2" label="Client Id" value="Jay shetty" disabled="true" />
-            <Input className="my-2" label="Property Id" value={data.Property_ID} disabled="true" />
+            <Input
+              className="my-2"
+              inputclasses="bg-slate-100"
+              label="Client Id"
+              value="Jay shetty"
+            />
+            <Input
+              className="my-2"
+              inputclasses="bg-slate-100"
+              label="Property Id"
+              value={data.Property_ID}
+            />
           </div>
         </div>
         <div className="flex-1">
-          <div className="flex justify-center items-stretch">
+          <div className="flex justify-center items-center">
             <TotalProperties
               numberOfProperty="02"
-              className="bg-slate-100 border border-lightgray p-4 text-center rounded-md flex-1 mr-10 my-0 px-0 flex-col-reverse"
+              className="flex-1 mr-10 bg-slate-100 my-0 h-full border border-lightgray py-9 text-center rounded-md  px-0 flex-col-reverse"
               strongClasses="text-8xl"
             />
 
             <Chart
-              className="flex-1 my-0 bg-slate-100 border border-lightgray flex-col-reverse rounded-md "
+              className="flex-1 my-2 py-5 bg-slate-100 border border-lightgray flex-col-reverse rounded-md "
               chartClasses="my-auto"
-              innerTextClasses="inset-0 top-1/2 mt-0 left-1/3 pl-2"
+              innerTextClasses="inset-0 top-1/2 mt-0 left-1/3 pl-3"
             />
           </div>
         </div>
@@ -74,61 +89,96 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
         </div>
         <div className="flex-1  mx-6">
           <div className="flex">
-            <Input className="my-2" label="Subscription Type" value="GOLD" disabled="true" />
-            <Input className="my-2" label="Contact" value="+91 9999999999" disabled="true" />
+            <Input
+              className="my-2"
+              inputclasses="bg-slate-100"
+              label="Subscription Type"
+              value="GOLD"
+            />
+            <Input
+              className="my-2"
+              inputclasses="bg-slate-100"
+              label="Contact"
+              value="+91 9999999999"
+            />
           </div>
         </div>
         <div className="flex-1">
-          <Input className="my-2" label="Email" value="jayshetty121@gmail.com" disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Email"
+            value="jayshetty121@gmail.com"
+          />
         </div>
       </div>
 
       <div className="flex">
         <div className="flex-1">
-          <Input className="my-2" label="Property Category" value={data.Type} disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Property Category"
+            value={data.Type}
+          />
         </div>
         <div className="flex-1  mx-6">
-          <Input className="my-2" label="Property Type" value="Villa" disabled="true" />
+          <Input className="my-2" inputclasses="bg-slate-100" label="Property Type" value="Villa" />
         </div>
         <div className="flex-1">
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Project & Society Name"
             value="Prestige Golfshire"
-            disabled="true"
           />
         </div>
       </div>
       <div className="flex">
         <div className="flex-1">
-          <Input className="my-2" label="Location" value={data.City} disabled="true" />
+          <Input className="my-2" inputclasses="bg-slate-100" value={data.City} />
         </div>
         <div className="flex-1 mx-6">
-          <Input className="my-2" label="Ownership" value="Owned by self" disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Ownership"
+            value="Owned by self"
+          />
         </div>
         <div className="flex-1">
-          <Input className="my-2" label="Occupancy Status" value="Self occupied" disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Occupancy Status"
+            value="Self occupied"
+          />
         </div>
       </div>
       <div className="flex">
         <div className="flex-1">
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Build up Area (sq. ft.)"
             value={data.Area}
-            disabled="true"
           />
         </div>
         <div className="flex-1  mx-6">
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Current Property Value"
             value="₹46,400,000"
-            disabled="true"
           />
         </div>
         <div className="flex-1">
-          <Input className="my-2" label="Save Property as" value="Summer house" disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Save Property as"
+            value="Summer house"
+          />
         </div>
       </div>
       <div className="flex">
@@ -136,29 +186,34 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
           <Input
             label="Bedrooms"
             value={data.Rooms}
-            disabled="true"
             input
             className="my-2"
+            inputclasses="bg-slate-100"
             classes="flex-1"
           />
           <Input
             label="Bathrooms"
             value={data.Bathrooms}
-            disabled="true"
             input
             className="my-2"
+            inputclasses="bg-slate-100"
             classes="flex-1"
           />
         </div>
         <div className="flex-1  mx-6">
-          <Input className="my-2" label="Furnishing" value={data.Furnish_Type} disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Furnishing"
+            value={data.Furnish_Type}
+          />
         </div>
         <div className="flex-1">
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Expected selling price"
             value="₹50,400,000 "
-            disabled="true"
           />
         </div>
       </div>
@@ -166,54 +221,66 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
         <div className="flex-1 flex">
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="No. of Floors"
             value="03"
-            disabled="true"
             input
             classes="flex-1"
           />
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Property on floor"
             value="02"
-            disabled="true"
             input
             classes="flex-1"
           />
         </div>
         <div className="flex-1  mx-6">
-          <Input className="my-2" label="Property Age (in Years)" value="5 years" disabled="true" />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Property Age (in Years)"
+            value="5 years"
+          />
         </div>
         <div className="flex-1">
-          <Input className="my-2" label="Property Facing" value="-" disabled="true" />
+          <Input className="my-2" inputclasses="bg-slate-100" label="Property Facing" value="-" />
         </div>
       </div>
       <div className="flex">
         <div className="flex-1 flex">
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Covered parking "
             value="Yes"
-            disabled="true"
             input
             classes="flex-1"
           />
           <Input
             className="my-2"
-            label="Property Id"
+            inputclasses="bg-slate-100"
+            label="Number"
             value={data.Property_ID}
-            disabled="true"
             input
             classes="flex-1"
           />
         </div>
         <div className="flex-1 flex  mx-6">
-          <Input className="my-2" label="Number" value="2" disabled="true" input classes="flex-1" />
           <Input
             className="my-2"
+            inputclasses="bg-slate-100"
             label="Lift availability"
             value={data.Property_ID}
-            disabled="true"
+            input
+            classes="flex-1"
+          />
+          <Input
+            className="my-2"
+            inputclasses="bg-slate-100"
+            label="Number"
+            value="2"
             input
             classes="flex-1"
           />
@@ -221,16 +288,16 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
         <div className="flex-1 flex">
           <Input
             className="my-2"
+            inputclasses="flex-1 bg-slate-100"
             label="Open parking"
             value="Yes"
-            disabled="true"
-            inputclasses="flex-1"
           />
-          <Input className="my-2" label="Number" value="2" disabled="true" inputclasses="flex-1" />
+          <Input className="my-2" inputclasses="flex-1 bg-slate-100" label="Number" value="2" />
         </div>
       </div>
       <Input
         type="textarea"
+        inputclasses="bg-slate-100"
         label="About property"
         value="Lörem ipsum anita Samuelsson nuskade nusk i promotiv. Pia Bergman queerpolska. Nevis metates. Margareta Ali lager. Blattesvenska termotologi nugårar. Bens sper. "
       />
@@ -272,7 +339,7 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
           </div>
           <Button
             buttonText="View Documents"
-            className="border border-lightgray text-blue px-6 py-2 mr-6"
+            className="border border-lightgray text-blue px-6 py-2 mr-6 hover:bg-lightgray"
           />
         </div>
       </div>
@@ -280,14 +347,14 @@ export default function PropertyDetail({ data, openOrders, closedOrders, handleC
         <Button
           type="button"
           buttonText="View details"
-          className="text-blue bg-transparent border border-lightgray px-2 "
+          className="text-blue bg-transparent border border-lightgray px-2 hover:bg-lightgray"
         />
       </Card>
       <Card heading="Closed orders" viewall="View all" data={closedOrders} className="shadow-md">
         <Button
           type="button"
           buttonText="View details"
-          className="text-blue bg-transparent border border-lightgray px-2 "
+          className="text-blue bg-transparent border border-lightgray px-2 hover:bg-lightgray "
         />
       </Card>
     </div>
